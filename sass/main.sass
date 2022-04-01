@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap')
+@font-face 
+    font-family: 'Whyte Inktrap Regular'
+    src: url('../assets/Whyte/WhyteInktrap-Regular.ttf')
+@font-face 
+    font-family: 'Whyte Inktrap Bold'
+    src: url('../assets/Whyte/WhyteInktrap-Bold.ttf')
+$off-black: #1D1D20
+$off-white: #F0F0F8
+$white-two: #BBBBC8
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+body
+    background: $off-black
+    overflow-x: hidden
+.hero
+    width: 100vw
+    height: 100vh
+    &__title
+        font-family: 'Whyte Inktrap Bold'
+        font-size: 120px
+        color: $off-white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        white-space: nowrap
+    &__svg
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        z-index: -1
+
+.slide
+    width: 100vw  
+    display: flex
+    justify-content: center
+    align-items: center  
+    &__text 
+        color: $white-two
+        font-style: 24px
+        font-family: 'Source Code Pro'
+        letter-spacing: .15rem
+
+.about
+    width: 90vw 
+    margin-top: 10rem
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    &__title
+        font-family: 'Whyte Inktrap Bold'
+        font-size: 64px
+        color: transparent
+        -webkit-text-stroke: 1px 
+        -webkit-text-stroke-color: $off-white
+    &__subtitle
+        font-family: 'Source Code Pro'
+        font-size: 24px
+        color: $off-white
+        margin-top: 55px
+    &__subtitle-two
+        font-family: 'Whyte Inktrap Regular'
+        font-size: 18px
+        color: $white-two
+        margin-top: 55px
+        line-height: 24px
+    &__svg
+        position: absolute
+        right: 391px
+        top: 120px
+
